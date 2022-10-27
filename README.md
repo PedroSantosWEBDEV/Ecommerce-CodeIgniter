@@ -1,93 +1,62 @@
 <p align="center"><img src="https://cdn.worldvectorlogo.com/logos/codeigniter-1.svg" width="100"></p>
-<p align="center">Shopping Cart Solution - CodeIgniter and Bootstrap</p>
+<p align="center">Solução de carrinho de compras - CodeIgniter and Bootstrap</p>
  
-## Bootsrap Responsive Multi-Vendor, MultiLanguage Online Shop Platform
+## Bootsrap Plataforma de loja online, multi-fornecedor e multilíngue responsiva
 
-Current versions:
+Versões atuais:
 
 * Codeigniter 3.1.13 (CodeIgniter Foundation)
 * Bootstrap 3.3.7
 
-## Donate
-<p>If this project help you reduce time to develop, you can give me a cup of coffee to continue its development. Thank you! :)</p>
+## Suporte dos seguintes recursos
 
-[![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=W5BR6K29BQX7E)
-
-<p><b>BTC Address:</b> 3Qwge1rMAqb7ko3g6AeJraV4ms1pDu2pFd</p>
-
-![alt text](https://raw.githubusercontent.com/kirilkirkov/Shopping-Cart-Solution-CodeIgniter/master/github/btc.png "Bitcoin address")
-
-
-## Support of following features
-
-1. Multi-Vendor
-2. MultiLanguage
-3. Virtual products support
-4. Multi Templates support
+1. Multifornecedor
+2. Multilíngue
+3. Suporte a produtos virtuais
+4. Suporte a vários modelos
 5. API
-6. Beautiful administration with high level of access
-7. Ajax based shopping cart
-8. Checkouts are saved to administration, email notifications for every new order
-9. Quantity of products managed from orders
-10. Add textual pages
-11. Activate and disable pages
-12. File manager in administration
-13. Integrated blog
-14. Email subscribe
-15. Easy installation
-16. Readable source
-17. Complete editing of public texts
-18. Receive ![alt text](https://raw.githubusercontent.com/kirilkirkov/Shopping-Cart-Solution-CodeIgniter/master/github/paypalLogo.png "Logo Title Text 1") payments, also have option for paypal sandbox testing
-19. Fast-loading templates for good seo
-20. Site color change with easy to use gradient generator
-21. Add multilanguage cookie notificator from silktide.com for EU Cookie Law 
-22. Multiple templates.. also can easy create your own.. 
-23. Bank account payments support
-24. Highcharts statistics for orders
-25. Discount codes
-26. Available on English, Greek, Bulgarian
-27. Responsive public pages, responsive administration, responsive vendor pages
-28. Advanced search with treeView categories
-29. Easy manage of products (new filed for every added language, subcategories are easy to manage)
-30. Advanced sorting and order products
+6. Bela administração com alto nível de acesso
+7. Carrinho de compras baseado em Ajax
+8. Os checkouts são salvos na administração, notificações por e-mail para cada novo pedido
+9. Quantidade de produtos gerenciados a partir de pedidos
+10. Adicione páginas textuais
+11. Ativar e desativar páginas
+12. Gerenciador de arquivos na administração
+13. Blog integrado
+14. Assinatura de e-mail
+15. Fácil instalação
+16. Fonte legível
+17. Edição completa de textos públicos
+18. Receba pagamentos ![alt text](https://raw.githubusercontent.com/kirilkirkov/Shopping-Cart-Solution-CodeIgniter/master/github/paypalLogo.png "Logo Title Text 1"), também tem opção para paypal teste de sandbox
+19. Modelos de carregamento rápido para um bom SEO
+20. Mudança de cor do site com gerador de gradiente fácil de usar
+21. Adicione o notificador de cookies multilíngue do silktide.com para a Lei de Cookies da UE
+22. Vários modelos .. também pode criar facilmente o seu próprio ..
+23. Suporte para pagamentos de contas bancárias
+24. Estatísticas de Highcharts para pedidos
+25. Códigos de desconto
+26. Disponível em inglês, grego, búlgaro
+27. Páginas públicas responsivas, administração responsiva, páginas de fornecedores responsivas
+28. Pesquisa avançada com categorias treeView
+29. Fácil gerenciamento de produtos (novo arquivamento para cada idioma adicionado, as subcategorias são fáceis de gerenciar)
+30. Classificação avançada e pedidos de produtos
 31. etc.
 
-## Easy installation in 2 steps
-1. Import database.sql to your MySQL database
-2. Set <b>database</b>, <b>username</b> and <b>password</b> in application/config/database.php
+## Fácil instalação em 2 passos
+1. Importe database.sql para seu banco de dados MySQL
+2. Defina <b>banco de dados</b>, <b>nome de usuário</b> e <b>senha</b> em application/config/database.php
 
-## Login to administration with
-- Administration url - /admin (eg. https://yourwebsite.com/admin)
-- Username: admin 
-- Password: admin
+## Faça login na administração com
+- URL de administração - /admin (por exemplo, https://yourwebsite.com/admin)
+- Nome de usuário: admin
+- Senha: admin
 
-## Vendors support
-- Login url is - /vendor/login (eg. https://yourwebsite.com/vendor/login)
-- Vendors are not supported only from "onepage" template.
-- Can register new vendor from url - /vendor/register.  (eg. https://yourwebsite.com/vendor/register)
-- Vendors must be enabled from administration - /admin (eg. https://yourwebsite.com/admin/settings) Settings -> Multi-Vendor Support (panel).
+## Suporte de fornecedores
+- O URL de login é - /vendor/login (por exemplo, https://yourwebsite.com/vendor/login)
+- Os fornecedores não são suportados apenas pelo modelo "onepage".
+- Pode registrar novo fornecedor de url - /vendor/register. (por exemplo, https://yourwebsite.com/vendor/register)
+- Os fornecedores devem ser habilitados na administração - /admin (por exemplo, https://yourwebsite.com/admin/settings) Configurações -> Suporte a vários fornecedores (painel).
 
-## Users registration
-<p>Users /registration/login (https://yourwebsite.com/registration/login) is added only in <b>greenlabel template</b>. (easily can be added to any other template, just copy files: login.php, signup.php, user.php to the new template directory (application/views/templates) and change your design).</p>
-<b>Users can track their orders history only.</b>
-
-## Screenshots of public pages
-![alt text](https://raw.githubusercontent.com/kirilkirkov/Shopping-Cart-Solution-CodeIgniter/master/github/templates.png "Logo Title Text 1")
-
-## Screenshots of vendors pages
-![alt text](https://raw.githubusercontent.com/kirilkirkov/Shopping-Cart-Solution-CodeIgniter/master/github/vendors_pages.jpg "Logo Title Text 1")
-
-## Screenshot of admin panel
-![alt text](https://raw.githubusercontent.com/kirilkirkov/Shopping-Cart-Solution-CodeIgniter/master/github/admin_panel4.png "Logo Title Text 1")
-
-### How To Write Templates
-Read in our wiki - https://github.com/kirilkirkov/Shopping-Cart-Solution-CodeIgniter/wiki/How-to-write-templates
-
-### Shopping cart peculiarities
-Read in our wiki - https://github.com/kirilkirkov/Shopping-Cart-Solution-CodeIgniter/wiki/Shopping-cart-peculiarities
-
-### Multi Vendor Support
-Read in our wiki - https://github.com/kirilkirkov/Shopping-Cart-Solution-CodeIgniter/wiki/Multi-Vendor-Support
-
-### API Documentation
-Read in our wiki - https://github.com/kirilkirkov/Shopping-Cart-Solution-CodeIgniter/wiki/API
+## Cadastro de usuários
+<p>Usuários /registration/login (https://yourwebsite.com/registration/login) é adicionado apenas no <b>modelo greenlabel</b>. (pode ser facilmente adicionado a qualquer outro template, basta copiar os arquivos: login.php, signup.php, user.php para o novo diretório de templates (application/views/templates) e alterar seu design).</p>
+<b>Os usuários podem acompanhar apenas o histórico de pedidos.</b>
