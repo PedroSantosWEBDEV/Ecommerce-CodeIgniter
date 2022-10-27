@@ -1,5 +1,5 @@
-# Security Policy
+# Política de segurança
 
-## Reporting a Vulnerability
+## Como relatar uma vulnerabilidade
 
-Please, contact me on email - kirilkirkov91@gmail.com
+Por favor, contacte-me no email - pedrocf125@gmail.com
