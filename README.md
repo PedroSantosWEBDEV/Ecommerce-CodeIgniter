@@ -1,7 +1,7 @@
 <p align="center"><img src="https://cdn.worldvectorlogo.com/logos/codeigniter-1.svg" width="100"></p>
 <p align="center">Solução de carrinho de compras - CodeIgniter and Bootstrap</p>
  
-## Bootsrap Plataforma de loja online, multi-fornecedor e multilíngue responsiva
+## Plataforma de loja online, multi-fornecedor e multilíngue responsiva
 
 Versões atuais:
 
