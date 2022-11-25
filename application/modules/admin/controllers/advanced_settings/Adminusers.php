@@ -1,8 +1,8 @@
 <?php
 
 /*
- * @Author:    Kiril Kirkov
- *  Gitgub:    https://github.com/kirilkirkov
+ * @Author:    Pedro Santos
+ *  Gitgub:    https://github.com/PedroSantosWEBDEV
  */
 if (!defined('BASEPATH')) {
     exit('No direct script access allowed');
