@@ -90,11 +90,11 @@
 
                 <div class="layout-warning-box">
                     <div class="label-warning layout-warning-advanced">
-                        Current gradient needs advanced features so the desired layout is overwritten! ... <a href="" class="force-layout-change">Force change</a>
+                    O gradiente atual precisa de recursos avançados para que o layout desejado seja substituído! ... <a href="" class="force-layout-change">Forçar mudança</a>
                     </div>
 
                     <div class="label-warning layout-warning-expert">
-                        Current gradient needs expert features so the desired layout is overwritten! ... <a href="" class="force-layout-change">Force change</a>
+                    O gradiente atual precisa de recursos especializados para que o layout desejado seja substituído! ... <a href="" class="force-layout-change">Forçar mudança</a>
                     </div>
                 </div>
 
@@ -127,7 +127,7 @@
                         <div class="css-gradient-editor-preferences form-horizontal block">
 
                             <div class="form-group">
-                                <label class="col-xs-3">Repeating: </label>
+                                <label class="col-xs-3">Recorrente: </label>
                                 <div class="col-xs-9 btn-group">
                                     <button class="btn btn-default btn-sm css-gradient-editor-controller" data-control-group="repeat" data-name="gradient_repeat" data-value="on">repeat</button>
                                     <button class="btn btn-default btn-sm css-gradient-editor-controller" data-control-group="repeat" data-name="gradient_repeat" data-value="off">no repeat</button>
