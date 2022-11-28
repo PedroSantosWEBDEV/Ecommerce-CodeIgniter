@@ -15,7 +15,7 @@
         <?php
     } 
     ?>
-    <h1><img src="<?= base_url('assets/imgs/products-img.png') ?>" class="header-img" style="margin-top:-2px;"> Products</h1>
+    <h1><img src="<?= base_url('assets/imgs/products-img.png') ?>" class="header-img" style="margin-top:-2px;"> Produtos</h1>
     <hr>
     <div class="row">
         <div class="col-xs-12">
@@ -23,18 +23,18 @@
                 <div class="row">
                     <form method="GET" id="searchProductsForm" action="">
                         <div class="col-sm-4">
-                            <label>Order:</label>
+                            <label>Pedido:</label>
                             <select name="order_by" class="form-control selectpicker change-products-form">
-                                <option <?= isset($_GET['order_by']) && $_GET['order_by'] == 'id=desc' ? 'selected=""' : '' ?> value="id=desc">Newest</option>
-                                <option <?= isset($_GET['order_by']) && $_GET['order_by'] == 'id=asc' ? 'selected=""' : '' ?> value="id=asc">Latest</option>
-                                <option <?= isset($_GET['order_by']) && $_GET['order_by'] == 'quantity=asc' ? 'selected=""' : '' ?> value="quantity=asc">Low Quantity</option>
-                                <option <?= isset($_GET['order_by']) && $_GET['order_by'] == 'quantity=desc' ? 'selected=""' : '' ?> value="quantity=desc">High Quantity</option>
+                                <option <?= isset($_GET['order_by']) && $_GET['order_by'] == 'id=desc' ? 'selected=""' : '' ?> value="id=desc">Recente</option>
+                                <option <?= isset($_GET['order_by']) && $_GET['order_by'] == 'id=asc' ? 'selected=""' : '' ?> value="id=asc">Antigo</option>
+                                <option <?= isset($_GET['order_by']) && $_GET['order_by'] == 'quantity=asc' ? 'selected=""' : '' ?> value="quantity=asc">Quantidade baixa</option>
+                                <option <?= isset($_GET['order_by']) && $_GET['order_by'] == 'quantity=desc' ? 'selected=""' : '' ?> value="quantity=desc">Quantidade alta</option>
                             </select>
                         </div>
                         <div class="col-sm-4">
-                            <label>Title:</label>
+                            <label>Título:</label>
                             <div class="input-group">
-                                <input class="form-control" placeholder="Product Title" type="text" value="<?= isset($_GET['search_title']) ? $_GET['search_title'] : '' ?>" name="search_title">
+                                <input class="form-control" placeholder="Título do produto" type="text" value="<?= isset($_GET['search_title']) ? $_GET['search_title'] : '' ?>" name="search_title">
                                 <span class="input-group-btn">
                                     <button class="btn btn-default" type="submit" value="">
                                         <i class="fa fa-search"></i>
@@ -43,9 +43,9 @@
                             </div>
                         </div>
                         <div class="col-sm-4">
-                            <label>Category:</label>
+                            <label>Categoria:</label>
                             <select name="category" class="form-control selectpicker change-products-form">
-                                <option value="">None</option>
+                                <option value="">Nenhum</option>
                                 <?php foreach ($shop_categories as $key_cat => $shop_categorie) { ?>
                                     <option <?= isset($_GET['category']) && $_GET['category'] == $key_cat ? 'selected=""' : '' ?> value="<?= $key_cat ?>">
                                         <?php
@@ -70,13 +70,13 @@
                     <table class="table table-bordered">
                         <thead>
                             <tr>
-                                <th>Image</th>
-                                <th>Title</th>
-                                <th>Price</th>
-                                <th>Quantity</th>
-                                <th>Vendor</th>
-                                <th>Position</th>
-                                <th class="text-right">Action</th>
+                                <th>Imagem</th>
+                                <th>Título</th>
+                                <th>Preço</th>
+                                <th>Quantidade</th>
+                                <th>Fornecedor</th>
+                                <th>Posição</th>
+                                <th class="text-right">Ação</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -120,8 +120,8 @@
                                     <td><?= $row->position ?></td>
                                     <td>
                                         <div class="pull-right">
-                                            <a href="<?= base_url('admin/publish/' . $row->id) ?>" class="btn btn-info">Edit</a>
-                                            <a href="<?= base_url('admin/products?delete=' . $row->id) ?>"  class="btn btn-danger confirm-delete">Delete</a>
+                                            <a href="<?= base_url('admin/publish/' . $row->id) ?>" class="btn btn-info">Editar</a>
+                                            <a href="<?= base_url('admin/products?delete=' . $row->id) ?>"  class="btn btn-danger confirm-delete">Excluir</a>
                                         </div>
                                     </td>
                                 </tr>
@@ -136,6 +136,6 @@
             <?php
         } else {
             ?>
-            <div class ="alert alert-info">No products found!</div>
+            <div class ="alert alert-info">Nenhum produto encontrado!</div>
         <?php } ?>
     </div>

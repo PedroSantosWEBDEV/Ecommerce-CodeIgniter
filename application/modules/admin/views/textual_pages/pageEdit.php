@@ -7,7 +7,7 @@
                 <input type="hidden" name="translations[]" value="<?= $p['abbr'] ?>">
             <?php } foreach ($page as $p) { ?>
                 <div class="form-group">
-                    <label for="name">Name in menu (<?= $p['lname'] ?><img src="<?= base_url('attachments/lang_flags/' . $p['flag']) ?>" alt="">)</label>
+                    <label for="name">Nome no menu (<?= $p['lname'] ?><img src="<?= base_url('attachments/lang_flags/' . $p['flag']) ?>" alt="">)</label>
                     <input type="text" name="name[]" class="form-control" value="<?= $p['name'] ?>" id="name">
                 </div>
             <?php } ?>
@@ -27,7 +27,7 @@
                 $i++;
             }
             ?>
-            <button type="submit" name="updatePage" class="btn btn-lg btn-default">Update</button>
+            <button type="submit" name="updatePage" class="btn btn-lg btn-default">Atualizar</button>
         </form>
     </div>
 </div>

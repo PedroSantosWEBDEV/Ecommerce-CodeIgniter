@@ -1,9 +1,9 @@
-<h1><img src="<?= base_url('assets/imgs/webpages.jpg') ?>" class="header-img" style="margin-top:-3px;"> Pages Manager</h1>
-<p>Here you can control which pages you want to have</p>
+<h1><img src="<?= base_url('assets/imgs/webpages.jpg') ?>" class="header-img" style="margin-top:-3px;"> Gerenciador de páginas</h1>
+<p>Aqui você pode controlar quais páginas deseja ter</p>
 <hr>
 <div class="row">
     <div class="col-sm-6 col-md-4">
-        <a href="javascript:void(0);" data-toggle="modal" data-target="#addPage" class="btn btn-default" style="margin-bottom:10px;">Add page</a>
+        <a href="javascript:void(0);" data-toggle="modal" data-target="#addPage" class="btn btn-default" style="margin-bottom:10px;">Adicionar Página</a>
         <?php if (!empty($pages)) {
             ?>
             <ul class="list-group list-none">
@@ -30,18 +30,18 @@
             <form action="" method="POST">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">Add Page</h4>
+                    <h4 class="modal-title" id="myModalLabel">Adicionar Página</h4>
                 </div>
                 <div class="modal-body">
                     <div class="form-group">
-                        <label for="pname">Page name</label>
+                        <label for="pname">Nome Página</label>
                         <input type="text" name="pname" class="form-control" id="pname">
                     </div>
-                    <div class="alert alert-warning">This page will be only textually</div>
+                    <div class="alert alert-warning">Esta página será apenas textualmente</div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                    <button type="submit" class="btn btn-primary">Add</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">Adicionar</button>
                 </div>
             </form>
         </div>

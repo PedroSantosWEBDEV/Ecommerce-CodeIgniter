@@ -1,4 +1,4 @@
-<h1><img src="<?= base_url('assets/imgs/seo_titles_descript.png') ?>" class="header-img" style="margin-top:-3px;">Titles / Descriptions</h1>
+<h1><img src="<?= base_url('assets/imgs/seo_titles_descript.png') ?>" class="header-img" style="margin-top:-3px;">Títulos / Descrições</h1>
 <hr>
 <div class="row">
     <div class="col-sm-4 col-md-6">
@@ -29,7 +29,7 @@
                 foreach ($languages as $language) {
                     ?>
                     <div class="form-group"> 
-                        <label>Title (<?= $language->name ?><img src="<?= base_url('attachments/lang_flags/' . $language->flag) ?>" alt="">)</label>
+                        <label>Título (<?= $language->name ?><img src="<?= base_url('attachments/lang_flags/' . $language->flag) ?>" alt="">)</label>
                         <input type="text" name="title[]" value="<?= @$seo_trans[$page['name']][$language->abbr]['title'] ?>" class="form-control">
                     </div>
                     <?php
@@ -37,15 +37,15 @@
                 foreach ($languages as $language) {
                     ?>
                     <div class="form-group"> 
-                        <label>Description (<?= $language->name ?><img src="<?= base_url('attachments/lang_flags/' . $language->flag) ?>" alt="">)</label>
+                        <label>Descrição (<?= $language->name ?><img src="<?= base_url('attachments/lang_flags/' . $language->flag) ?>" alt="">)</label>
                         <input type="text" name="description[]" value="<?= @$seo_trans[$page['name']][$language->abbr]['description'] ?>" class="form-control">
                     </div>
                     <?php
                 }
             }
             ?>
-            <input type="submit" name="save" value="Save" class="btn btn-default" style="margin-bottom: 10px;">
+            <input type="submit" name="save" value="Salvar" class="btn btn-default" style="margin-bottom: 10px;">
         </form>
-        <div class="alert alert-warning">If you add new page with controller or in controller methor.. insert her name in table <b>seo_pages</b>!</div>
+        <div class="alert alert-warning">Se você adicionar uma nova página com o controlador ou no método do controlador.. insira o nome dela na tabela <b>seo_pages</b>!</div>
     </div>
 </div>

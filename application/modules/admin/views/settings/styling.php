@@ -129,8 +129,8 @@
                             <div class="form-group">
                                 <label class="col-xs-3">Recorrente: </label>
                                 <div class="col-xs-9 btn-group">
-                                    <button class="btn btn-default btn-sm css-gradient-editor-controller" data-control-group="repeat" data-name="gradient_repeat" data-value="on">repeat</button>
-                                    <button class="btn btn-default btn-sm css-gradient-editor-controller" data-control-group="repeat" data-name="gradient_repeat" data-value="off">no repeat</button>
+                                    <button class="btn btn-default btn-sm css-gradient-editor-controller" data-control-group="repeat" data-name="gradient_repeat" data-value="on">repetir</button>
+                                    <button class="btn btn-default btn-sm css-gradient-editor-controller" data-control-group="repeat" data-name="gradient_repeat" data-value="off">não repetir</button>
                                 </div>
                             </div>
 
@@ -143,7 +143,7 @@
                             </div>
 
                             <div class="css-gradient-editor-linear-preferences form-group">
-                                <label class="col-xs-3">Direction:</label>
+                                <label class="col-xs-3">Direção:</label>
                                 <div class="col-xs-9">
                                     <div class="css-gradient-editor-linear-direction">
                                         <div class="css-gradient-editor-linear-direction-implicit">
@@ -173,18 +173,18 @@
 
                             <div class="css-gradient-editor-radial-preferences form-group">
                                 <div class="form-group css-gradient-editor-radial-shape">
-                                    <label class="col-xs-3">Shape: </label>
+                                    <label class="col-xs-3">Forma: </label>
                                     <div class="col-xs-9 btn-group">
-                                        <button class="btn btn-default btn-sm css-gradient-editor-controller" data-control-group="gradient_shape" data-name="gradient_shape" data-value="circle">circle</button>
-                                        <button class="btn btn-default btn-sm css-gradient-editor-controller" data-control-group="gradient_shape" data-name="gradient_shape" data-value="ellipse">ellipse</button>
+                                        <button class="btn btn-default btn-sm css-gradient-editor-controller" data-control-group="gradient_shape" data-name="gradient_shape" data-value="circle">círculo</button>
+                                        <button class="btn btn-default btn-sm css-gradient-editor-controller" data-control-group="gradient_shape" data-name="gradient_shape" data-value="ellipse">elipse</button>
                                     </div>
                                 </div>
 
                                 <div class="form-group css-gradient-editor-radial-size">
-                                    <label class="col-xs-3">Size: </label>
+                                    <label class="col-xs-3">Tamanho: </label>
                                     <div class="col-xs-9">
                                         <div class="controls">
-                                            <label>Implicit</label>
+                                            <label>Implícito</label>
                                             <div class="btn-group">
                                                 <button class="btn btn-default btn-sm css-gradient-editor-controller" data-control-group="gradient_size" data-name="gradient_size" data-value="closest-side">closest-side</button>
                                                 <button class="btn btn-default btn-sm css-gradient-editor-controller" data-control-group="gradient_size" data-name="gradient_size" data-value="closest-corner">closest-corner</button>
@@ -193,17 +193,17 @@
                                             </div>
                                         </div>
                                         <div class="controls">
-                                            <label>Explicit</label>
+                                            <label>Explícito</label>
                                             <span class="span css-gradient-editor-controller css-gradient-editor-size-explicit" data-control-group="gradient_size" data-name="gradient_size" data-value="explicit"><input type="text" name="gradient_size" data-units='["px"]' class="input-sm"> <input type="text" name="gradient_size_major" data-units='["px"]' class="input-sm"></span>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="form-group css-gradient-editor-radial-horizontal-position">
-                                    <label class="col-xs-3">Horizontal position: </label>
+                                    <label class="col-xs-3">Posição horizontal: </label>
                                     <div class="col-xs-9">
                                         <div class="controls">
-                                            <label>Implicit</label>
+                                            <label>Implícito</label>
                                             <div class="btn-group">
                                                 <button class="btn btn-default btn-sm css-gradient-editor-controller" data-control-group="gradient_position_horizontal" data-name="gradient_position_horizontal" data-value="left">left</button>
                                                 <button class="btn btn-default btn-sm css-gradient-editor-controller" data-control-group="gradient_position_horizontal" data-name="gradient_position_horizontal" data-value="center">center</button>
@@ -211,17 +211,17 @@
                                             </div>
                                         </div>
                                         <div class="controls">
-                                            <label>Explicit</label>
+                                            <label>Explícito</label>
                                             <span class="css-gradient-editor-controller css-gradient-editor-position-horizontal-explicit" data-control-group="gradient_position_horizontal" data-name="gradient_position_horizontal" data-value="explicit"><input type="text" name="gradient_position_horizontal" data-units='["%","px"]' class="input-sm"></span>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="form-group css-gradient-editor-radial-vertical-position">
-                                    <label class="col-xs-3">Vertical position: </label>
+                                    <label class="col-xs-3">Posição vertical: </label>
                                     <div class="col-xs-9">
                                         <div class="controls">
-                                            <label>Implicit</label>
+                                            <label>Implícito</label>
                                             <div class="btn-group">
                                                 <button class="btn btn-default btn-sm css-gradient-editor-controller" data-control-group="gradient_position_vertical" data-name="gradient_position_vertical" data-value="top">top</button>
                                                 <button class="btn btn-default btn-sm css-gradient-editor-controller" data-control-group="gradient_position_vertical" data-name="gradient_position_vertical" data-value="center">center</button>
@@ -229,7 +229,7 @@
                                             </div>
                                         </div>
                                         <div class="controls">
-                                            <label>Explicit</label>
+                                            <label>Explícito</label>
                                             <span class="css-gradient-editor-controller css-gradient-editor-position-vertical-explicit" data-control-group="gradient_position_vertical" data-name="gradient_position_vertical" data-value="explicit"><input type="text" name="gradient_position_vertical" data-units='["px","%"]' class="input-sm"></span>
                                         </div>
                                     </div>
@@ -248,8 +248,8 @@
 
                         <div class="css-gradient-editor-colorstops-advanced clearfix">
                             <div class="css-gradient-editor-stoppointlist"></div>
-                            <button type="button" class="col-md-4 btn btn-sm btn-default css-gradient-editor-reorder-stoppoints"><span class="pngicon-random"></span> Update order</button>
-                            <button type="button" class="col-md-offset-4 col-md-4 btn btn-sm btn-primary css-gradient-editor-add-stoppoint"><span class="pngicon-plus"></span> Add stop point</button>
+                            <button type="button" class="col-md-4 btn btn-sm btn-default css-gradient-editor-reorder-stoppoints"><span class="pngicon-random"></span> Atualizar ordem</button>
+                            <button type="button" class="col-md-offset-4 col-md-4 btn btn-sm btn-primary css-gradient-editor-add-stoppoint"><span class="pngicon-plus"></span> Adicionar ponto de parada</button>
                         </div>
 
                     </div>
@@ -283,7 +283,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Gradient permalink <small>Test the current gradient in your mobile browser</small></h4>
+                        <h4 class="modal-title">Gradient permalink <small>Teste o gradiente atual em seu navegador móvel</small></h4>
                     </div>
                     <div class="modal-body">
                         <div id="permalinkqr" class="text-center"></div>
@@ -422,11 +422,11 @@
 <div class="container">
     <form method="POST" action="">
         <div class="form-group">
-            <label for="new-style">Paste new style:</label>
-            <textarea class="form-control" name="newStyle" rows="15" id="new-style" placeholder="Leave empty to load default styles"><?= $newStyle ?></textarea>
+            <label for="new-style">Colar novo estilo:</label>
+            <textarea class="form-control" name="newStyle" rows="15" id="new-style" placeholder="Deixe em branco para carregar os estilos padrão"><?= $newStyle ?></textarea>
         </div>
-        <button type="submit" class="btn btn-lg btn-default">Save</button>
-        <a href="javascript:void(0)" class="btn btn-lg btn-default clear-style">Clear Styles</a>
+        <button type="submit" class="btn btn-lg btn-default">Salvar</button>
+        <a href="javascript:void(0)" class="btn btn-lg btn-default clear-style">Limpar Estilos</a>
     </form>
 </div>
 

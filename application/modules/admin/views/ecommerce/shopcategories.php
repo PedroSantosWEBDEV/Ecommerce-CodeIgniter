@@ -1,5 +1,5 @@
 <div id="languages">
-    <h1><img src="<?= base_url('assets/imgs/categories.jpg') ?>" class="header-img" style="margin-top:-2px;"> Shop Categories</h1> 
+    <h1><img src="<?= base_url('assets/imgs/categories.jpg') ?>" class="header-img" style="margin-top:-2px;"> Categorias de loja</h1> 
     <hr>
     <?php if (validation_errors()) { ?>
         <div class="alert alert-danger"><?= validation_errors() ?></div>
@@ -19,7 +19,7 @@
         <?php
     }
     ?>
-    <a href="javascript:void(0);" data-toggle="modal" data-target="#add_edit_articles" class="btn btn-primary btn-xs pull-right" style="margin-bottom:10px;"><b>+</b> Add shop categorie</a>
+    <a href="javascript:void(0);" data-toggle="modal" data-target="#add_edit_articles" class="btn btn-primary btn-xs pull-right" style="margin-bottom:10px;"><b>+</b> Adicionar categoria de loja</a>
     <div class="clearfix"></div>
     <?php
     if (!empty($shop_categories)) {
@@ -29,10 +29,10 @@
                 <thead>
                     <tr>
                         <th>#ID</th>
-                        <th>Name</th>
-                        <th>Subcategory for</th>
-                        <th>Position</th>
-                        <th class="text-center">Action</th>
+                        <th>Nome</th>
+                        <th>Subcategoria</th>
+                        <th>Posição</th>
+                        <th class="text-center">Ação</th>
                     </tr>
                 </thead>
                 <?php
@@ -67,7 +67,7 @@
                             <span id="position-<?= $key_cat ?>"><?= $shop_categorie['position'] ?></span>
                         </td>
                         <td class="text-center">
-                            <a href="<?= base_url('admin/shopcategories/?delete=' . $key_cat) ?>" class="btn btn-danger btn-xs confirm-delete"><span class="glyphicon glyphicon-remove"></span> Del</a>
+                            <a href="<?= base_url('admin/shopcategories/?delete=' . $key_cat) ?>" class="btn btn-danger btn-xs confirm-delete"><span class="glyphicon glyphicon-remove"></span> Excluir</a>
                         </td>
                     </tr>
                     <?php

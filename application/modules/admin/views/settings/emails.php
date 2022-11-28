@@ -1,5 +1,5 @@
-<h1><img src="<?= base_url('assets/imgs/email.png') ?>" class="header-img" style="margin-top:-3px;"> Subscribed</h1>
-<p>Here are all subscribed emails of users</p>
+<h1><img src="<?= base_url('assets/imgs/email.png') ?>" class="header-img" style="margin-top:-3px;"> Inscritos</h1>
+<p>Aqui estão todos os e-mails inscritos dos usuários</p>
 <hr>
 <?php if ($this->session->flashdata('emailDeleted')) { ?>
     <hr>
@@ -13,9 +13,9 @@
             <tr>
                 <th>Email</th>
                 <th>Browser</th>
-                <th>Ip</th>
-                <th>Time</th>
-                <th>Action</th>
+                <th>IP</th>
+                <th>Tempo</th>
+                <th>Ação</th>
             </tr>
         </thead>
         <tbody>
@@ -27,14 +27,14 @@
                         <td><?= $email->email ?></td>
                         <td><?= $email->browser ?></td>
                         <td><?= $email->ip ?></td>
-                        <td><?= date('Y.m.d / H.m.s', $email->time) ?></td>
-                        <td><a href="?delete=<?= $email->id ?>" class="btn-xs btn-danger confirm-delete">Delete</a></td>
+                        <td><?= date('Y/md / H:m:s', $email->time) ?></td>
+                        <td><a href="?delete=<?= $email->id ?>" class="btn-xs btn-danger confirm-delete">Excluir</a></td>
                     </tr>
                     <?php
                 }
             } else {
                 ?>
-                <tr><td colspan="5">No emails found!</td></tr>
+                <tr><td colspan="5">Nenhum e-mail encontrado!</td></tr>
             <?php } ?>
         </tbody>
     </table>
