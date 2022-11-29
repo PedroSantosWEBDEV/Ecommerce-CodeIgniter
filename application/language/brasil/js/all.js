@@ -1,0 +1,15 @@
+var lang = { 
+added_to_cart:"Adicionado ao carrinho",
+error_to_cart:"Problema com carrinho de compras! Tente novamente!",
+no_products:"Nenhum produto",
+confirm_clear_cart:"Tem certeza de que deseja excluir itens do carrinho de compras?",
+cleared_cart:"Seu carrinho est&aacute; vazio",
+are_you_sure:"Are you sure?",
+yes:"Sim",
+no:"N&atilde;o",
+clear_all:"Clear",
+checkout:"Payment",
+remove_from_cart:"Deleted from shopping cart",
+enter_valid_email:"Please enter a valid email address",
+discountCodeInvalid:"Discount code is invalid",
+};
