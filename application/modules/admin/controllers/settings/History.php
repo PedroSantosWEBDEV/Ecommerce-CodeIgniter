@@ -37,7 +37,7 @@ class History extends ADMIN_Controller
         $this->load->view('settings/history', $data);
         $this->load->view('_parts/footer');
         if ($page == 0) {
-            $this->saveHistory('Go to History');
+            $this->saveHistory('Ir para o histórico');
         }
     }
 

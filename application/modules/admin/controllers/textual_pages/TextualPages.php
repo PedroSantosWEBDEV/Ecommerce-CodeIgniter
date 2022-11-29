@@ -53,7 +53,7 @@ class TextualPages extends ADMIN_Controller
         } else {
             echo 0;
         }
-        $this->saveHistory('Page status Changed');
+        $this->saveHistory('Status da página alterado');
     }
 
 }
