@@ -22,7 +22,7 @@ class Settings extends ADMIN_Controller
         $this->login_check();
         $data = array();
         $head = array();
-        $head['title'] = 'Administration - Settings';
+        $head['title'] = 'Administração - Configurações';
         $head['description'] = '';
         $head['keywords'] = '';
 
@@ -46,7 +46,7 @@ class Settings extends ADMIN_Controller
         $this->load->view('_parts/header', $head);
         $this->load->view('settings/settings', $data);
         $this->load->view('_parts/footer');
-        $this->saveHistory('Go to Settings Page');
+        $this->saveHistory('Ir para a página de configurações');
     }
 
     private function getValueStores()
@@ -76,25 +76,25 @@ class Settings extends ADMIN_Controller
                 $newImage = $data['upload_data']['file_name'];
                 $this->Home_admin_model->setValueStore('sitelogo', $newImage);
                 $this->saveHistory('Change site logo');
-                $this->session->set_flashdata('resultSiteLogoPublish', 'New logo is set!');
+                $this->session->set_flashdata('resultSiteLogoPublish', 'Novo logotipo definido!');
             }
             redirect('admin/settings');
         }
         if (isset($_POST['naviText'])) {
             $this->Home_admin_model->setValueStore('navitext', $_POST['naviText']);
-            $this->session->set_flashdata('resultNaviText', 'New navigation text is set!');
+            $this->session->set_flashdata('resultNaviText', 'Novo texto de navegação definido!');
             $this->saveHistory('Change navigation text');
             redirect('admin/settings');
         }
         if (isset($_POST['footerCopyright'])) {
             $this->Home_admin_model->setValueStore('footercopyright', $_POST['footerCopyright']);
-            $this->session->set_flashdata('resultFooterCopyright', 'New navigation text is set!');
+            $this->session->set_flashdata('resultFooterCopyright', 'Novo texto de navegação definido!');
             $this->saveHistory('Change footer copyright');
             redirect('admin/settings');
         }
         if (isset($_POST['contactsPage'])) {
             $this->Home_admin_model->setValueStore('contactspage', $_POST['contactsPage']);
-            $this->session->set_flashdata('resultContactspage', 'Contacts page is updated!');
+            $this->session->set_flashdata('resultContactspage', 'A página de contatos está atualizada!');
             $this->saveHistory('Change contacts page');
             redirect('admin/settings');
         }
@@ -102,8 +102,8 @@ class Settings extends ADMIN_Controller
             $this->Home_admin_model->setValueStore('footerContactAddr', $_POST['footerContactAddr']);
             $this->Home_admin_model->setValueStore('footerContactPhone', $_POST['footerContactPhone']);
             $this->Home_admin_model->setValueStore('footerContactEmail', $_POST['footerContactEmail']);
-            $this->session->set_flashdata('resultfooterContacts', 'Contacts on footer are updated!');
-            $this->saveHistory('Change footer contacts');
+            $this->session->set_flashdata('resultfooterContacts', 'Contatos no rodapé atualizados!');
+            $this->saveHistory('Alterar contatos do rodapé');
             redirect('admin/settings');
         }
         if (isset($_POST['footerSocial'])) {
@@ -112,51 +112,51 @@ class Settings extends ADMIN_Controller
             $this->Home_admin_model->setValueStore('footerSocialGooglePlus', $_POST['footerSocialGooglePlus']);
             $this->Home_admin_model->setValueStore('footerSocialPinterest', $_POST['footerSocialPinterest']);
             $this->Home_admin_model->setValueStore('footerSocialYoutube', $_POST['footerSocialYoutube']);
-            $this->session->set_flashdata('resultfooterSocial', 'Social on footer are updated!');
-            $this->saveHistory('Change footer contacts');
+            $this->session->set_flashdata('resultfooterSocial', 'As redes sociais no rodapé estão atualizadas!');
+            $this->saveHistory('Alterar contatos do rodapé');
             redirect('admin/settings');
         }
         if (isset($_POST['googleMaps'])) {
             $this->Home_admin_model->setValueStore('googleMaps', $_POST['googleMaps']);
             $this->Home_admin_model->setValueStore('googleApi', $_POST['googleApi']);
-            $this->session->set_flashdata('resultGoogleMaps', 'Google maps coordinates and api key are updated!');
-            $this->saveHistory('Update Google Maps Coordinates and Api Key');
+            $this->session->set_flashdata('resultGoogleMaps', 'As coordenadas do Google Maps e a chave da API foram atualizadas!');
+            $this->saveHistory('Atualizada as coordenadas do Google Maps e chave de API');
             redirect('admin/settings');
         }
         if (isset($_POST['footerAboutUs'])) {
             $this->Home_admin_model->setValueStore('footerAboutUs', $_POST['footerAboutUs']);
-            $this->session->set_flashdata('resultFooterAboutUs', 'Footer about us text changed!');
-            $this->saveHistory('Change footer about us info');
+            $this->session->set_flashdata('resultFooterAboutUs', 'O texto do rodapé "sobre nós" foi alterado!');
+            $this->saveHistory('Alterado o rodapé "sobre nós"');
             redirect('admin/settings');
         }
         if (isset($_POST['contactsEmailTo'])) {
             $this->Home_admin_model->setValueStore('contactsEmailTo', $_POST['contactsEmailTo']);
-            $this->session->set_flashdata('resultEmailTo', 'Email changed!');
-            $this->saveHistory('Change where going emails from contact form');
+            $this->session->set_flashdata('resultEmailTo', 'E-mail alterado!');
+            $this->saveHistory('Alterado para onde vão os e-mails do formulário de contato');
             redirect('admin/settings');
         }
         if (isset($_POST['shippingOrder'])) {
             $this->Home_admin_model->setValueStore('shippingOrder', $_POST['shippingOrder']);
-            $this->session->set_flashdata('shippingOrder', 'Shipping Order price chagned!');
-            $this->saveHistory('Change Shipping free for order more than ' . $_POST['shippingOrder']);
+            $this->session->set_flashdata('shippingOrder', 'Mudança de preço do pedido de envio!');
+            $this->saveHistory('Alterado frete grátis para pedidos acima de ' . $_POST['shippingOrder']);
             redirect('admin/settings');
         }
         if (isset($_POST['shippingAmount'])) {
             $this->Home_admin_model->setValueStore('shippingAmount', $_POST['shippingAmount']);
-            $this->session->set_flashdata('shippingAmount', 'Shipping amount price chagned!');
-            $this->saveHistory('Change Shipping amount for orders ' . $_POST['shippingAmount']);
+            $this->session->set_flashdata('shippingAmount', 'Preço do valor do frete alterado!');
+            $this->saveHistory('Alterado o valor do frete para pedidos ' . $_POST['shippingAmount']);
             redirect('admin/settings');
         }
         if (isset($_POST['addJs'])) {
             $this->Home_admin_model->setValueStore('addJs', $_POST['addJs']);
-            $this->session->set_flashdata('addJs', 'JavaScript code is added');
-            $this->saveHistory('Add JS to website');
+            $this->session->set_flashdata('addJs', 'O código JavaScript foi adicionado');
+            $this->saveHistory('Adicionado JS ao site');
             redirect('admin/settings');
         }
         if (isset($_POST['publicQuantity'])) {
             $this->Home_admin_model->setValueStore('publicQuantity', $_POST['publicQuantity']);
-            $this->session->set_flashdata('publicQuantity', 'Public quantity visibility changed');
-            $this->saveHistory('Change publicQuantity visibility');
+            $this->session->set_flashdata('publicQuantity', 'Visibilidade da quantidade pública alterada');
+            $this->saveHistory('Alterado a visibilidade da quantidade pública');
             redirect('admin/settings');
         }
         if (isset($_POST['publicDateAdded'])) {

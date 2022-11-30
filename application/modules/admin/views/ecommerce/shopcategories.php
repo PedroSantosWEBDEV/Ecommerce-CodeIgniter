@@ -80,7 +80,7 @@
     } else {
         ?>
         <div class="clearfix"></div><hr>
-        <div class="alert alert-info">No shop categories found!</div>
+        <div class="alert alert-info">Nenhuma categoria de loja encontrada!</div>
     <?php } ?>
 
     <!-- add edit home categorie -->
