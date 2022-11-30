@@ -35,7 +35,7 @@ Versões atuais:
 23. Suporte para pagamentos de contas bancárias
 24. Estatísticas de Highcharts para pedidos
 25. Códigos de desconto
-26. Disponível em inglês, grego, búlgaro
+26. Disponível em inglês, portugues(Brasil)
 27. Páginas públicas responsivas, administração responsiva, páginas de fornecedores responsivas
 28. Pesquisa avançada com categorias treeView
 29. Fácil gerenciamento de produtos (novo arquivamento para cada idioma adicionado, as subcategorias são fáceis de gerenciar)
