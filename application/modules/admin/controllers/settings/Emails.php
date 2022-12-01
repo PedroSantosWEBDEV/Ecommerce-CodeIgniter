@@ -33,12 +33,12 @@ class Emails extends ADMIN_Controller
         }
         if (isset($_GET['delete'])) {
             $data = $this->Emails_model->deleteEmail($_GET['delete']);
-            $this->session->set_flashdata('emailDeleted', 'Email addres is deleted!');
+            $this->session->set_flashdata('emailDeleted', 'O endereço de e-mail foi excluído!');
             redirect('admin/emails');
         }
         $data = array();
         $head = array();
-        $head['title'] = 'Administration - Subscribed Emails';
+        $head['title'] = 'Administração - Emails Subscritos';
         $head['description'] = '!';
         $head['keywords'] = '';
         $rowscount = $this->Emails_model->emailsCount();
@@ -48,7 +48,7 @@ class Emails extends ADMIN_Controller
         $this->load->view('settings/emails', $data);
         $this->load->view('_parts/footer');
         if ($page == 0) {
-            $this->saveHistory('Go to Subscribed Emails');
+            $this->saveHistory('Ir para E-mails Inscritos');
         }
     }
 

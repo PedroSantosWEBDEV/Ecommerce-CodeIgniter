@@ -15,7 +15,7 @@ class Login extends ADMIN_Controller
     {
         $data = array();
         $head = array();
-        $head['title'] = 'Administration - Login';
+        $head['title'] = 'Administração - Login';
         $head['description'] = '';
         $head['keywords'] = '';
         $this->load->view('_parts/header', $head);

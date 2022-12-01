@@ -22,7 +22,7 @@ class Adminusers extends ADMIN_Controller
         $this->login_check();
         if (isset($_GET['delete'])) {
             $this->Admin_users_model->deleteAdminUser($_GET['delete']);
-            $this->session->set_flashdata('result_delete', 'User is deleted!');
+            $this->session->set_flashdata('result_delete', 'O usuário foi excluído!');
             redirect('admin/adminusers');
         }
         if (isset($_GET['edit']) && !isset($_POST['username'])) {

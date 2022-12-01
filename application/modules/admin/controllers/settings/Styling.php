@@ -21,13 +21,13 @@ class Styling extends ADMIN_Controller
         $this->login_check();
         $data = array();
         $head = array();
-        $head['title'] = 'Administration - Styling';
+        $head['title'] = 'Administração - Estilização';
         $head['description'] = '!';
         $head['keywords'] = '';
 
         if (isset($_POST['newStyle'])) {
             $this->Home_admin_model->setValueStore('newStyle', $_POST['newStyle']);
-            $this->saveHistory('Change site styling');
+            $this->saveHistory('Alterar o estilo do site');
             redirect('admin/styling');
         }
 
@@ -35,7 +35,7 @@ class Styling extends ADMIN_Controller
         $this->load->view('_parts/header', $head);
         $this->load->view('settings/styling', $data);
         $this->load->view('_parts/footer');
-        $this->saveHistory('Go to Styling page');
+        $this->saveHistory('Ir para a página de estilo');
     }
 
 }

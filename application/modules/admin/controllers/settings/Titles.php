@@ -22,14 +22,14 @@ class Titles extends ADMIN_Controller
         $this->login_check();
         $data = array();
         $head = array();
-        $head['title'] = 'Administration - Titles / Descriptions';
+        $head['title'] = 'Administração - Títulos / Descrições';
         $head['description'] = '!';
         $head['keywords'] = '';
 
         if (isset($_POST['save'])) {
             $this->Titles_model->setSeoPageTranslations($_POST);
-            $this->saveHistory('Changed Titles / Descriptions');
-            $this->session->set_flashdata('result_publish', 'Saved successful!');
+            $this->saveHistory('Títulos/descrições alterados');
+            $this->session->set_flashdata('result_publish', 'Salvo com sucesso!');
             redirect('admin/titles');
         }
 
@@ -39,7 +39,7 @@ class Titles extends ADMIN_Controller
         $this->load->view('_parts/header', $head);
         $this->load->view('settings/titles', $data);
         $this->load->view('_parts/footer');
-        $this->saveHistory('Go to Titles / Descriptions page');
+        $this->saveHistory('Vá para a página Títulos / Descrições');
     }
 
 }

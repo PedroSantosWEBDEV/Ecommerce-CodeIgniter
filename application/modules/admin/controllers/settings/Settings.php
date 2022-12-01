@@ -155,68 +155,68 @@ class Settings extends ADMIN_Controller
         }
         if (isset($_POST['publicQuantity'])) {
             $this->Home_admin_model->setValueStore('publicQuantity', $_POST['publicQuantity']);
-            $this->session->set_flashdata('publicQuantity', 'Visibilidade da quantidade pública alterada');
-            $this->saveHistory('Alterado a visibilidade da quantidade pública');
+            $this->session->set_flashdata('publicQuantity', 'Visibilidade da quantidade de dados públicos alterado');
+            $this->saveHistory('Alterado a visibilidade da quantidade de dados públicos');
             redirect('admin/settings');
         }
         if (isset($_POST['publicDateAdded'])) {
             $this->Home_admin_model->setValueStore('publicDateAdded', $_POST['publicDateAdded']);
-            $this->session->set_flashdata('publicDateAdded', 'Public date added visibility changed');
-            $this->saveHistory('Change public date added visibility');
+            $this->session->set_flashdata('publicDateAdded', 'Visibilidade dos dados públicos alterado');
+            $this->saveHistory('Alterado a visibilidade dos dados públicos');
             redirect('admin/settings');
         }
         if (isset($_POST['outOfStock'])) {
             $this->Home_admin_model->setValueStore('outOfStock', $_POST['outOfStock']);
-            $this->session->set_flashdata('outOfStock', 'Out of stock settings visibility change');
-            $this->saveHistory('Change visibility of final checkout page');
+            $this->session->set_flashdata('outOfStock', 'Visibilidade das configurações de falta de estoque (changeOut) alterado a visibilidade das configurações de estoque');
+            $this->saveHistory('Alterar a visibilidade da página final de checkout');
             redirect('admin/settings');
         }
         if (isset($_POST['moreInfoBtn'])) {
             $this->Home_admin_model->setValueStore('moreInfoBtn', $_POST['moreInfoBtn']);
-            $this->session->set_flashdata('moreInfoBtn', 'Button More Information visibility is changed');
-            $this->saveHistory('Change visibility of More Information button in products list');
+            $this->session->set_flashdata('moreInfoBtn', 'A visibilidade do botão Mais informações foi alterada');
+            $this->saveHistory('Alterar a visibilidade do botão Mais informações na lista de produtos');
             redirect('admin/settings');
         }
         if (isset($_POST['showBrands'])) {
             $this->Home_admin_model->setValueStore('showBrands', $_POST['showBrands']);
-            $this->session->set_flashdata('showBrands', 'Brands visibility changed');
-            $this->saveHistory('Brands visibility changed');
+            $this->session->set_flashdata('showBrands', 'Visibilidade das marcas alterada');
+            $this->saveHistory('Visibilidade das marcas alterado');
             redirect('admin/settings');
         }
         if (isset($_POST['virtualProducts'])) {
             $this->Home_admin_model->setValueStore('virtualProducts', $_POST['virtualProducts']);
-            $this->session->set_flashdata('virtualProducts', 'Virtual products visibility changed');
-            $this->saveHistory('Virtual products visibility changed');
+            $this->session->set_flashdata('virtualProducts', 'Visibilidade de produtos virtuais alterada');
+            $this->saveHistory('Visibilidade de produtos virtuais alterado');
             redirect('admin/settings');
         }
         if (isset($_POST['showInSlider'])) {
             $this->Home_admin_model->setValueStore('showInSlider', $_POST['showInSlider']);
-            $this->session->set_flashdata('showInSlider', 'In Slider products visibility changed');
-            $this->saveHistory('In Slider products visibility changed');
+            $this->session->set_flashdata('showInSlider', 'A visibilidade dos produtos Slider foi alterada');
+            $this->saveHistory('A visibilidade dos produtos Slider foi alterado');
             redirect('admin/settings');
         }
         if (isset($_POST['multiVendor'])) {
             $this->Home_admin_model->setValueStore('multiVendor', $_POST['multiVendor']);
-            $this->session->set_flashdata('multiVendor', 'Multi Vendor Support changed');
-            $this->saveHistory('Multi Vendor Support changed');
+            $this->session->set_flashdata('multiVendor', 'Suporte a vários fornecedores alterado');
+            $this->saveHistory('Suporte a vários fornecedores alterado');
             redirect('admin/settings');
         }
         if (isset($_POST['setCookieLaw'])) {
             unset($_POST['setCookieLaw']);
             $this->setCookieLaw($_POST);
-            $this->saveHistory('Cookie law information changed');
+            $this->saveHistory('Informações sobre a lei de cookies alteradas');
             redirect('admin/settings');
         }
         if (isset($_POST['hideBuyButtonsOfOutOfStock'])) {
             $this->Home_admin_model->setValueStore('hideBuyButtonsOfOutOfStock', $_POST['hideBuyButtonsOfOutOfStock']);
-            $this->session->set_flashdata('hideBuyButtonsOfOutOfStock', 'Buy buttons of Out of stock products visibility changed');
-            $this->saveHistory('Buy buttons visibility changed for out of stock products');
+            $this->session->set_flashdata('hideBuyButtonsOfOutOfStock', 'A visibilidade dos botões de compra de produtos fora de estoque foi alterada');
+            $this->saveHistory('A visibilidade dos botões de compra foi alterado para produtos fora de estoque');
             redirect('admin/settings');
         }
         if (isset($_POST['refreshAfterAddToCart'])) {
             $this->Home_admin_model->setValueStore('refreshAfterAddToCart', $_POST['refreshAfterAddToCart']);
-            $this->session->set_flashdata('refreshAfterAddToCart', 'Saved');
-            $this->saveHistory('Option to open shopping cart after click add to cart button changed');
+            $this->session->set_flashdata('refreshAfterAddToCart', 'Salvou');
+            $this->saveHistory('A opção de abrir o carrinho de compras depois de clicar no botão adicionar ao carrinho foi alterado');
             redirect('admin/settings');
         }
     }

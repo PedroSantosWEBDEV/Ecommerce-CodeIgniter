@@ -21,7 +21,7 @@ class Templates extends ADMIN_Controller
         $this->login_check();
         $data = array();
         $head = array();
-        $head['title'] = 'Administration - Templates';
+        $head['title'] = 'Administração - Modelos';
         $head['description'] = '!';
         $head['keywords'] = '';
         if (isset($_POST['template'])) {
@@ -38,7 +38,7 @@ class Templates extends ADMIN_Controller
         $this->load->view('_parts/header', $head);
         $this->load->view('settings/templates', $data);
         $this->load->view('_parts/footer');
-        $this->saveHistory('Go to Templates Page');
+        $this->saveHistory('Ir para a página de modelos');
     }
 
 }

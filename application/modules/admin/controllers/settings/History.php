@@ -24,7 +24,7 @@ class History extends ADMIN_Controller
         $this->login_check();
         $data = array();
         $head = array();
-        $head['title'] = 'Administration - History';
+        $head['title'] = 'Administração - Histórico';
         $head['description'] = '!';
         $head['keywords'] = '';
 

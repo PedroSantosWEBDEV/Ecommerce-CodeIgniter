@@ -18,9 +18,9 @@ class Contacts extends MY_Controller
         if (isset($_POST['message'])) {
             $result = $this->sendEmail();
             if ($result) {
-                $this->session->set_flashdata('resultSend', 'Email is sened!');
+                $this->session->set_flashdata('resultSend', 'O e-mail foi enviado!');
             } else {
-                $this->session->set_flashdata('resultSend', 'Email send error!');
+                $this->session->set_flashdata('resultSend', 'Erro ao enviar e-mail!');
             }
             redirect('contacts');
         }

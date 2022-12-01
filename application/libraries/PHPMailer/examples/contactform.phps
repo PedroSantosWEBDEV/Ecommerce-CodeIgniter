@@ -51,10 +51,10 @@ EOT;
 }
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Contact form</title>
+    <title>Formulário de Contato</title>
 </head>
 <body>
 <h1>Contact us</h1>
@@ -62,9 +62,9 @@ EOT;
     echo "<h2>$msg</h2>";
 } ?>
 <form method="POST">
-    <label for="name">Name: <input type="text" name="name" id="name"></label><br>
-    <label for="email">Email address: <input type="email" name="email" id="email"></label><br>
-    <label for="message">Message: <textarea name="message" id="message" rows="8" cols="20"></textarea></label><br>
+    <label for="name">Nome: <input type="text" name="name" id="name"></label><br>
+    <label for="email">E-mail: <input type="email" name="email" id="email"></label><br>
+    <label for="message">Mensagem: <textarea name="message" id="message" rows="8" cols="20"></textarea></label><br>
     <input type="submit" value="Send">
 </form>
 </body>
