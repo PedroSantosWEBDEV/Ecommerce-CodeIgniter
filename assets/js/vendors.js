@@ -54,7 +54,7 @@ $('.change-ord-status').change(function () {
 
     $.post(urls.changeVendorOrdersOrderStatus, {the_id: the_id, to_status: to_status}, function (data) {
         if (data == '0') {
-            alert('Error with status change. Please check logs!');
+            alert('Erro com mudança de estado. Verifique os registros!');
         }
     });
 });

@@ -380,7 +380,7 @@ var password_login = $("input[name=password]");
 $('button[type="submit"]').click(function (e) {
     if (username_login.val() == "" || password_login.val() == "") {
         e.preventDefault();
-        $("#output").addClass("alert alert-danger animated fadeInUp").html("Please.. enter all fields ;)");
+        $("#output").addClass("alert alert-danger animated fadeInUp").html("Por favor.. insira todos os campos;)");
     }
 });
 
@@ -455,20 +455,20 @@ function changeOrdersOrderStatus(id, to_status, products, userEmail) {
     $.post(urls.changeOrdersOrderStatus, {the_id: id, to_status: to_status, products: products, userEmail: userEmail}, function (data) {
         if (data == '1') {
             if (to_status == 0) {
-                $('[data-action-id="' + id + '"] div.status b').text('No processed');
+                $('[data-action-id="' + id + '"] div.status b').text('Não processado');
                 $('[data-action-id="' + id + '"]').removeClass().addClass('bg-danger text-center');
             }
             if (to_status == 1) {
-                $('[data-action-id="' + id + '"] div.status b').text('Processed');
+                $('[data-action-id="' + id + '"] div.status b').text('Processado');
                 $('[data-action-id="' + id + '"]').removeClass().addClass('bg-success  text-center');
             }
             if (to_status == 2) {
-                $('[data-action-id="' + id + '"] div.status b').text('Rejected');
+                $('[data-action-id="' + id + '"] div.status b').text('Rejeitado');
                 $('[data-action-id="' + id + '"]').removeClass().addClass('bg-warning  text-center');
             }
             $('#new-order-alert-' + id).remove();
         } else {
-            alert('Error with status change. Please check logs!');
+            alert('Erro com mudança de estado. Verifique os registros!');
         }
     });
 }
@@ -482,18 +482,18 @@ function changeProductStatus(id) {
     }).done(function (data) {
         if (data == '1') {
             if (to_status == 1) {
-                $('[data-article-id="' + id + '"] .staus-is').text('Visible');
+                $('[data-article-id="' + id + '"] .staus-is').text('Visível');
                 $('[data-article-id="' + id + '"] .status-is-icon').html('<i class="fa fa-unlock"></i>');
                 $('[data-article-id="' + id + '"]').removeClass('invisible-status');
                 $("#to-status").val(0);
             } else {
-                $('[data-article-id="' + id + '"] .staus-is').text('Invisible');
+                $('[data-article-id="' + id + '"] .staus-is').text('Invisível');
                 $('[data-article-id="' + id + '"]').addClass('invisible-status');
                 $('[data-article-id="' + id + '"] .status-is-icon').html('<i class="fa fa-lock"></i>');
                 $("#to-status").val(1)
             }
         } else {
-            alert('Error change status!');
+            alert('Erro ao alterar status!');
         }
     });
 }
@@ -509,10 +509,10 @@ function changePass() {
             if (data == '1') {
                 $("#pass_result").fadeIn(500).delay(2000).fadeOut(500);
             } else {
-                alert('Password cant change!');
+                alert('A senha não pode mudar!');
             }
         });
     } else {
-        alert('Too short pass!');
+        alert('Senha muito curta!');
     }
 }

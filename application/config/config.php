@@ -95,7 +95,7 @@ $config['admin_history'] = true;
   | hepler for help.. :)
   |
  */
-$config['language'] = 'BRASIL';
+$config['language'] = 'brasil';
 $config['language_abbr'] = 'br';
 $config['currency'] = 'R$';
 $config['currencyKey'] = 'BRL';
