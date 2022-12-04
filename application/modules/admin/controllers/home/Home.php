@@ -36,7 +36,7 @@ class Home extends ADMIN_Controller
         $this->load->view('_parts/header', $head);
         $this->load->view('home/home', $data);
         $this->load->view('_parts/footer');
-        $this->saveHistory('Go to home page');
+        $this->saveHistory('Vá para a página inicial');
     }
 
     /*

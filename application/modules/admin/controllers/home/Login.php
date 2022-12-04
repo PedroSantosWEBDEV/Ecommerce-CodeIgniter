@@ -33,7 +33,7 @@ class Login extends ADMIN_Controller
                     redirect('admin/home');
                 } else {
                     $this->saveHistory('Cant login with - User: ' . $_POST['username'] . ' and Pass: ' . $_POST['username']);
-                    $this->session->set_flashdata('err_login', 'Wrong username or password!');
+                    $this->session->set_flashdata('err_login', 'Nome de usuário ou senha incorretos!');
                     redirect('admin');
                 }
             }
