@@ -67,7 +67,7 @@ class AddProduct extends VENDOR_Controller
         $this->load->library('upload', $config);
         $this->upload->initialize($config);
         if (!$this->upload->do_upload('userfile')) {
-            log_message('error', 'Image Upload Error: ' . $this->upload->display_errors());
+            log_message('error', 'Erro de upload de imagem: ' . $this->upload->display_errors());
         }
         $img = $this->upload->data();
         return $img['file_name'];
