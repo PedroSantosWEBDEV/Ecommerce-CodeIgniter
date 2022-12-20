@@ -23,8 +23,8 @@ class Products extends VENDOR_Controller
     {
         if (isset($_GET['delete'])) {
             $this->Products_model->deleteProduct($_GET['delete']);
-            $this->session->set_flashdata('result_delete', 'product is deleted!');
-            $this->saveHistory('Delete product id - ' . $_GET['delete']);
+            $this->session->set_flashdata('result_delete', 'produto foi deletado!');
+            $this->saveHistory('Excluir id do produto - ' . $_GET['delete']);
             redirect('admin/products');
         }
         $data = array();
